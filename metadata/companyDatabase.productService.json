@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "6619285ca0f49fa4e9fecf9e"
+  },
+  "id": "2",
+  "name": "Clean up the air-condition",
+  "description": "",
+  "price": 35
+},
+{
+  "_id": {
+    "$oid": "6619286ea0f49fa4e9fecfa2"
+  },
+  "id": "4",
+  "name": "Office cleaning",
+  "description": "",
+  "price": 49
+},
+{
+  "_id": {
+    "$oid": "66192876a0f49fa4e9fecfa4"
+  },
+  "id": "5",
+  "name": "Take care of the sick",
+  "description": "",
+  "price": 55
+},
+{
+  "_id": {
+    "$oid": "6619287ea0f49fa4e9fecfa6"
+  },
+  "id": "6",
+  "name": "Cleaning sofas, curtains, mattresses",
+  "description": "",
+  "price": 65
+},
+{
+  "_id": {
+    "$oid": "66192885a0f49fa4e9fecfa8"
+  },
+  "id": "7",
+  "name": "Care for the elderly",
+  "description": "",
+  "price": 77
+},
+{
+  "_id": {
+    "$oid": "6619288ca0f49fa4e9fecfaa"
+  },
+  "id": "8",
+  "name": "Family cooking",
+  "description": "",
+  "price": 223
+},
+{
+  "_id": {
+    "$oid": "66192894a0f49fa4e9fecfac"
+  },
+  "id": "9",
+  "name": "Laundry",
+  "description": "",
+  "price": 11
+},
+{
+  "_id": {
+    "$oid": "661a4924f8732938313a36d9"
+  },
+  "id": "11",
+  "name": "House  Children",
+  "description": "",
+  "price": 222
+}]

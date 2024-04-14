@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  service_booking:
+    container_name: service_booking
+    image: booking_microservice:v1.0.0 
+    user: root:root
+    restart: always
+
+  service_pricing:
+    container_name: service_pricing
+    image: pricing_microservice:v1.0.0 
+    user: root:root
+    restart: always
+
+  service_product:
+    container_name: service_product
+    image: product_microservice:v1.0.0 
+    user: root:root
+    restart: always
+
+  service_sending:
+      container_name: service_sending
+      image: sending_microservice:v1.0.0 
+      user: root:root
+      restart: always
+  
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    user: root:root
+    restart: always
+  
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: "rabbitmq"
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+      - rabbitmq
+    restart: always
+
+    

@@ -1,0 +1,7 @@
+{
+    "port": ":5002",
+    "mgAddrs": "127.0.0.1:27017",
+    "mgDbName": "metadata",
+    "mgDbUsername": "",
+    "mgDbPassword": ""
+}
