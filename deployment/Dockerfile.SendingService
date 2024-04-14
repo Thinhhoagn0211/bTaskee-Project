@@ -7,4 +7,5 @@ RUN go mod download
 COPY ./src/sending-microservice/ .
 RUN go build -o main .
 RUN chmod +x main
+EXPOSE 5003
 CMD ["./main"]

@@ -21,7 +21,7 @@ var doc = `{
         "license": {},
         "version": "1.0"
     },
-    "host": "localhost:5002",
+    "host": "0.0.0.0:5002",
     "basePath": "/api/v1",
     "paths": {
         "/CalculatePrice/AllJobs": {

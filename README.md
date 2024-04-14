@@ -36,7 +36,7 @@ We have two ways to run these microservice (by run local or by docker-compose)
     "queueName": "companyQueue"
 }
 ```
-**NOTE:** We should replace address 127.0.0.1 into your ip address in this file of each microservice before you build with docker and we must import file json to init data to mongoDB [database](./metadata/)
+**NOTE:** We must import file json to init data to mongoDB [database](./metadata/). Please create companyDatabase and 3 collections names: productService, JobsOrdered, ListOfEmployee .
 
 - Running with docker-compose: Jump into [`Makefile`](./Makefile), then
 

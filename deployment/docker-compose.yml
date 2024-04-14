@@ -6,34 +6,52 @@ services:
     image: booking_microservice:v1.0.0 
     user: root:root
     restart: always
+    networks:
+      - mynetwork
+    ports:
+      - 5001:5001
 
   service_pricing:
     container_name: service_pricing
     image: pricing_microservice:v1.0.0 
     user: root:root
     restart: always
+    networks:
+      - mynetwork
+    ports:
+      - 5002:5002
 
   service_product:
     container_name: service_product
     image: product_microservice:v1.0.0 
     user: root:root
     restart: always
+    networks:
+      - mynetwork
+    ports:
+      - 5000:5000
 
   service_sending:
-      container_name: service_sending
-      image: sending_microservice:v1.0.0 
-      user: root:root
-      restart: always
-  
+    container_name: service_sending
+    image: sending_microservice:v1.0.0 
+    user: root:root
+    restart: always
+    networks:
+      - mynetwork
+    ports:
+    - 5003:5003
+
   mongo:
     image: mongo:latest
     ports:
-      - '27017:27017'
+      - 27017:27017
     user: root:root
     restart: always
-  
+    networks:
+      - mynetwork
+
   rabbitmq:
-    image: rabbitmq:3-management-alpine
+    image: rabbitmq:latest
     container_name: "rabbitmq"
     ports:
       - 5672:5672
@@ -42,7 +60,9 @@ services:
       - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
       - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
     networks:
-      - rabbitmq
+      - mynetwork
     restart: always
 
     
+networks:
+  mynetwork:

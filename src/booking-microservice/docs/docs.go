@@ -21,7 +21,7 @@ var doc = `{
         "license": {},
         "version": "1.0"
     },
-    "host": "localhost:5001",
+    "host": "0.0.0.0:5001",
     "basePath": "/api/v1",
     "paths": {
         "/Job/AddJob": {

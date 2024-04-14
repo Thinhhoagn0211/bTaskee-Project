@@ -21,7 +21,7 @@ var doc = `{
         "license": {},
         "version": "1.0"
     },
-    "host": "localhost:5000",
+    "host": "0.0.0.0:5000",
     "basePath": "/api/v1",
     "paths": {
         "/Job/GetAllServices": {
@@ -376,35 +376,6 @@ var doc = `{
                 "message": {
                     "type": "string",
                     "example": "message"
-                }
-            }
-        },
-        "models.Movie": {
-            "type": "object",
-            "properties": {
-                "coverImage": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "id": {
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "url": {
-                    "type": "string"
-                }
-            }
-        },
-        "models.Token": {
-            "type": "object",
-            "properties": {
-                "token": {
-                    "type": "string",
-                    "example": "5bb3695b82ebac0f76e1cafa"
                 }
             }
         }
